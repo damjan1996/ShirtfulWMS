@@ -1,0 +1,117 @@
+{
+    "general": {
+        "company_name": "Shirtful GmbH",
+        "system_name": "Shirtful WMS",
+        "version": "1.0.0",
+        "language": "de",
+        "timezone": "Europe/Berlin",
+        "debug_mode": false,
+        "log_level": "INFO"
+    },
+    "database": {
+        "server": "localhost",
+        "database": "ShirtfulWMS",
+        "trusted_connection": true,
+        "username": "",
+        "password": "",
+        "connection_timeout": 30,
+        "command_timeout": 300,
+        "pool_size": 5
+    },
+    "rfid": {
+        "enabled": true,
+        "port": "AUTO",
+        "baudrate": 9600,
+        "timeout": 0.5,
+        "beep_on_scan": true,
+        "duplicate_timeout": 2.0,
+        "auto_read": true
+    },
+    "scanner": {
+        "enabled": true,
+        "camera_index": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "autofocus": true,
+        "scan_interval": 0.1,
+        "min_qr_size": 50,
+        "beep_on_scan": true,
+        "show_preview": true
+    },
+    "ui": {
+        "fullscreen": true,
+        "touch_mode": true,
+        "show_keyboard": true,
+        "theme": "light",
+        "font_size": "normal",
+        "sound_enabled": true,
+        "notification_duration": 3000,
+        "auto_logout_minutes": 30
+    },
+    "working_hours": {
+        "start_time": "06:00",
+        "end_time": "22:00",
+        "break_after_hours": 6,
+        "break_duration_minutes": 30,
+        "overtime_allowed": true,
+        "weekend_work": true
+    },
+    "process": {
+        "auto_print_labels": true,
+        "require_quality_check": true,
+        "allow_skip_stages": false,
+        "max_batch_size": 50,
+        "priority_handling": true,
+        "express_processing": true
+    },
+    "notifications": {
+        "email_enabled": false,
+        "email_server": "",
+        "email_port": 587,
+        "email_user": "",
+        "email_password": "",
+        "email_from": "wms@shirtful.de",
+        "alert_on_errors": true,
+        "daily_report": true
+    },
+    "backup": {
+        "enabled": true,
+        "interval_hours": 24,
+        "backup_path": "C:\\Backups\\ShirtfulWMS",
+        "keep_days": 30,
+        "compress": true,
+        "include_logs": true
+    },
+    "security": {
+        "require_rfid": true,
+        "allow_manual_login": false,
+        "password_min_length": 8,
+        "session_timeout_minutes": 60,
+        "max_login_attempts": 3,
+        "audit_logging": true
+    },
+    "performance": {
+        "cache_enabled": true,
+        "cache_ttl_seconds": 300,
+        "max_concurrent_scans": 3,
+        "db_connection_pooling": true,
+        "lazy_loading": true
+    },
+    "paths": {
+        "data_dir": "C:\\ProgramData\\ShirtfulWMS",
+        "log_dir": "C:\\ProgramData\\ShirtfulWMS\\logs",
+        "backup_dir": "C:\\Backups\\ShirtfulWMS",
+        "temp_dir": "C:\\Temp\\ShirtfulWMS",
+        "report_dir": "C:\\Reports\\ShirtfulWMS"
+    },
+    "integration": {
+        "erp_enabled": false,
+        "erp_endpoint": "",
+        "erp_api_key": "",
+        "webhook_enabled": false,
+        "webhook_url": "",
+        "sync_interval_minutes": 15
+    }
+}

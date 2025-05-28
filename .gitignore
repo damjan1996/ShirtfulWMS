@@ -1,0 +1,153 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# celery beat schedule file
+celerybeat-schedule
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# Backups
+backups/
+*.bak
+*.backup
+
+# Config (with local settings)
+config/local_settings.py
+config/settings.local.json
+*.local.json
+
+# Temp files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Windows
+$RECYCLE.BIN/
+
+# Documentation build
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Application specific
+resources/sounds/*.wav
+resources/images/*.jpg
+resources/images/*.png
+resources/icons/*.ico
+
+# Secrets and credentials
+*.pem
+*.key
+*.cert
+secrets.json
+credentials.json
+
+# Output files
+output/
+exports/
+reports/*.pdf
+reports/*.xlsx
+reports/*.csv
+
+# Session files
+sessions/
+*.session
+
+# Cache
+cache/
+.cache/

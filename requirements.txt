@@ -1,0 +1,80 @@
+# Shirtful WMS - Python Dependencies
+# Python 3.13+ compatible versions
+# Updated for latest Python 3.13 compatibility
+
+# ===== CORE DEPENDENCIES =====
+
+# Database Connectivity
+pyodbc==5.2.0  # Updated for Python 3.13 compatibility
+
+# Hardware Integration
+pyserial==3.5  # RFID reader communication
+
+# Image Processing & QR/Barcode
+numpy>=2.1.0  # Python 3.13 compatible version
+opencv-python>=4.9.0.80  # Computer vision for QR scanning
+pillow>=10.3.0  # Image processing
+pyzbar==0.1.9  # QR/Barcode decoding
+qrcode[pil]==7.4.2  # QR code generation with PIL support
+
+# Audio Feedback
+pygame>=2.5.2  # Sound effects for scanner feedback
+
+# Utilities
+python-dateutil>=2.9.0  # Date utilities
+pytz>=2024.1  # Timezone support
+python-dotenv>=1.0.1  # Environment variables
+configparser>=6.0.1  # Configuration management
+
+# Logging
+colorlog>=6.8.2  # Colored console output
+
+# ===== DEVELOPMENT DEPENDENCIES =====
+# (Optional - comment out for production)
+
+# Testing
+pytest>=8.0.0  # Testing framework
+pytest-cov>=4.1.0  # Coverage reports
+pytest-mock>=3.12.0  # Mock support
+
+# Code Quality
+black>=24.0.0  # Code formatter
+flake8>=7.0.0  # Linter
+mypy>=1.8.0  # Type checker
+pre-commit>=3.6.0  # Git hooks
+
+# Documentation
+sphinx>=7.2.0  # Documentation generator
+sphinx-rtd-theme>=2.0.0  # ReadTheDocs theme
+
+# ===== DEPLOYMENT DEPENDENCIES =====
+# (Only needed for creating executables)
+
+pyinstaller>=6.4.0  # Create .exe files
+
+# ===== OPTIONAL FEATURES =====
+# Uncomment as needed for additional functionality
+
+# Data Analysis & Reporting
+# pandas>=2.2.0  # Data manipulation
+# matplotlib>=3.8.0  # Charts and graphs
+# reportlab>=4.1.0  # PDF generation
+# openpyxl>=3.1.0  # Excel file support
+# python-docx>=1.1.0  # Word document generation
+
+# Network & API
+# requests>=2.31.0  # HTTP requests
+# aiohttp>=3.9.0  # Async HTTP
+
+# Scheduling
+# schedule>=1.2.0  # Task scheduling
+# apscheduler>=3.10.0  # Advanced scheduling
+
+# ===== NOTES =====
+# 1. tkinter is included with Python, no need to install
+# 2. For Windows: Install Visual C++ Redistributable for pyzbar
+#    https://aka.ms/vs/17/release/vc_redist.x64.exe
+# 3. For SQL Server: Ensure ODBC Driver 17 or 18 is installed
+#    https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server
+# 4. If you still encounter build issues, consider installing:
+#    Microsoft Visual C++ Build Tools from https://visualstudio.microsoft.com/visual-cpp-build-tools/
